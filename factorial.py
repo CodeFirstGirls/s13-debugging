@@ -6,3 +6,7 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n - 1)
+
+def square(n):
+    """Returns the square of a number n."""
+    return n * n
