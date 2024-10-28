@@ -10,3 +10,10 @@ def factorial(n):
 def square(n):
     """Returns the square of a number n."""
     return n ** 2
+
+def power(n):
+    pass
+
+
+def sqrt(n):
+    pass
