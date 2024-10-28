@@ -18,4 +18,5 @@ def power(n, m):
 
 
 def sqrt(n):
-    pass
+    """Returns the square root of a number n."""
+    return math.sqrt(n)
