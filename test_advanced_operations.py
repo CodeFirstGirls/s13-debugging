@@ -1,6 +1,6 @@
 # test_advanced_operations.py
 
-from advanced_operations import factorial, square
+from advanced_operations import factorial, square, power
 
 
 def test_factorial():
@@ -18,8 +18,16 @@ def test_square():
     assert square(5) == 25, "Test failed: square(5) should be 25"
     assert square(6) == 36, "Test failed: square(6) should be 36"
 
+def test_power():
+    assert power(3, 2) == 9, "Test failed: power(3,2) should be 9"
+    assert power(2, 5) == 32, "Test failed: power(2,5) should be 32"
+    assert power(5, 1) == 5, "Test failed: power(5,1) should be 5"
+    assert power(4, 0) == 1, "Test failed: power(4,0) should be 1"
+    assert power(10, -1) == 0.1, "Test failed: power(10,-1) should be 0.1"
+
 
 if __name__ == "__main__":
     test_factorial()
-    test_factorial()
+    test_square()
+    test_power()
     print("All tests passed!")
